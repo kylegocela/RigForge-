@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product Page | Rigforge Customs</title>
+    <link rel="icon" type="image/x-icon" href="assets/rigforgeHeadLogo.png">
+    <link rel="stylesheet" href="rigstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a href="rigforge.html" class="redirectHome">
+        <div class="headerBar">
+            <img src="assets/rigforge.png" alt="Rigforge Logo">
+            <div class="textOverlap">
+                <h2>RIGFORGE</h2>
+                <span>Customs</span>
+            </div>
+    </a>
+    <div class="navigator">
+        <div class="navItems">
+            <a href="rigforgeCatalog.html">Catalog</a>
+            <a href="rigforgeBuildPage.html">Build</a>
+            <a href="rigforgeAboutUs.html">About Us</a>
+            <a id="userNavBtn" href="rigforgeLogin.html"><img src="assets/user.png" alt="user"></a>
+        </div>
+    </div>
+    </div>
+
+    <div class="catalogWrapper">
+
+
+        <div class="redirection">
+            <a href="rigforge.html">Home</a> &gt;
+            <a href="rigforgeCatalog.html">Catalog</a> &gt;
+            <span id="breadcrumbName"></span>
+        </div>
+
+        <div class="productDetailWrapper">
+
+ 
+            <div class="productImageSection">
+
+
+                <div class="thumbnailStrip">
+                    <img class="thumbnail active" id="thumb1" src="" alt="Main view">
+                    <img class="thumbnail" id="thumb2" src="assets/placeholder1.webp" alt="View 2">
+                    <img class="thumbnail" id="thumb3" src="assets/placeholder2.webp" alt="View 3">
+                </div>
+
+                
+                <div class="mainImageWrap">
+                    <img id="mainProductImage" src="" alt="">
+                </div>
+
+            </div>
+
+
+            <div class="productDetailInfo">
+
+
+                <h1 id="productName"></h1>
+                <p class="productDetailMeta">&#9733; No Reviews</p>
+                <p class="productDetailMeta">Available Units: <span id="productUnits">7</span></p>
+                <p class="productDetailPrice" id="productPrice"></p>
+
+                <div class="productQtyRow">
+                    <label for="productQty">Qty</label>
+                    <input type="number" id="productQty" value="1" min="1">
+                </div>
+
+                <button class="buyNowBtn" id="buyNowBtn">Buy Now</button>
+
+            </div>
+
+        </div>
+
+        <hr class="productDivider">
+
+
+        <div class="productDescSection">
+            <h3>Product Description</h3>
+
+            <p id="productDescription"></p>
+
+            <h3>Product Specifications</h3>
+            <ul id="productSpecs">
+
+            </ul>
+        </div>
+
+    </div>
+
+
+    <script src="rigforge.js"></script>
+
+</body>
+
+</html>

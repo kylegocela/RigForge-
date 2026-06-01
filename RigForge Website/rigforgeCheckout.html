@@ -1,0 +1,142 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout | Rigforge Customs</title>
+    <link rel="icon" type="image/x-icon" href="assets/rigforgeHeadLogo.png">
+    <link rel="stylesheet" href="rigstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a href="rigforge.html" class="redirectHome">
+        <div class="headerBar">
+            <img src="assets/rigforge.png" alt="Rigforge Logo">
+            <div class="textOverlap">
+                <h2>RIGFORGE</h2>
+                <span>Customs</span>
+            </div>
+    </a>
+    <div class="navigator">
+        <div class="navItems">
+            <a href="rigforgeCatalog.html">Catalog</a>
+            <a href="rigforgeBuildPage.html">Build</a>
+            <a href="rigforgeAboutUs.html">About Us</a>
+            <a id="userNavBtn" href="rigforgeLogin.html"><img src="assets/user.png" alt="user"></a>
+        </div>
+    </div>
+    </div>
+
+    <div class="checkoutWrapper">
+
+        <div class="checkoutLeft">
+            <h2 class="checkoutTitle">Check Out</h2>
+
+            <div class="checkoutSection">
+                <label class="checkoutLabel">Contact</label>
+                <div class="inputGroup">
+                    <input type="text" id="fieldContact" class="checkoutInput" placeholder="Email or mobile number">
+                </div>
+            </div>
+
+            <div class="checkoutSection">
+                <label class="checkoutLabel">Delivery</label>
+                <input type="text" class="checkoutInput" value="Philippines">
+                <div class="checkoutRow">
+                    <div class="inputGroup">
+                        <input type="text" id="fieldFirstName" class="checkoutInput half" placeholder="First name (optional)">
+                    </div>
+                    <div class="inputGroup">
+                        <input type="text" id="fieldLastName" class="checkoutInput half" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="inputGroup">
+                    <input type="text" id="fieldAddress" class="checkoutInput" placeholder="Address">
+                </div>
+                <div class="inputGroup">
+                    <input type="text" id="fieldBarangay" class="checkoutInput" placeholder="Barangay">
+                </div>
+                <input type="text" class="checkoutInput" placeholder="Landmark">
+                <div class="checkoutRow">
+                    <div class="inputGroup">
+                        <input type="text" id="fieldPostal" class="checkoutInput half" placeholder="Postal code">
+                    </div>
+                    <div class="inputGroup">
+                        <input type="text" id="fieldCity" class="checkoutInput half" placeholder="City">
+                    </div>
+                </div>
+                <input type="text" class="checkoutInput" value="Cebu">
+                <div class="inputGroup">
+                    <input type="text" id="fieldPhone" class="checkoutInput" placeholder="Phone">
+                </div>
+            </div>
+
+            <div class="checkoutSection">
+                <label class="checkoutLabel">Shipping method</label>
+                <div class="checkoutRadioGroup">
+                    <label class="checkoutRadioOption selected">
+                        <input type="radio" name="shipping" value="bank" checked> Bank Deposit
+                    </label>
+                    <label class="checkoutRadioOption">
+                        <input type="radio" name="shipping" value="gcash"> GCash
+                    </label>
+                </div>
+            </div>
+
+            <div class="checkoutSection">
+                <label class="checkoutLabel">Billing address</label>
+                <div class="checkoutRadioGroup">
+                    <label class="checkoutRadioOption selected">
+                        <input type="radio" name="billing" value="same" checked> Same as shipping address
+                    </label>
+                    <label class="checkoutRadioOption">
+                        <input type="radio" name="billing" value="different"> Use a different billing address
+                    </label>
+                </div>
+            </div>
+
+            <div class="checkoutSection">
+                <label class="checkoutAgree">
+                    <input type="checkbox"> I agree with the terms and conditions.
+                </label>
+            </div>
+
+            <button class="completeOrderBtn">Complete Order</button>
+        </div>
+
+        <div class="checkoutRight">
+
+            <div class="checkoutProductRow">
+                <img id="checkoutProductImage" src="" alt="">
+                <div class="checkoutProductDetails">
+                    <strong><p id="checkoutProductTitle"></p></strong>
+                    <p id="checkoutProductName"></p>
+                    <p id="checkoutProductSpec"></p>
+                </div>
+                <p class="checkoutProductPrice" id="checkoutProductPrice"></p>
+            </div>
+
+            <div class="checkoutSummary">
+                <div class="checkoutSummaryRow">
+                    <span>Subtotal</span>
+                    <span id="checkoutSubtotal"></span>
+                </div>
+                <div class="checkoutSummaryRow">
+                    <span>Shipping</span>
+                    <span class="checkoutShippingNote">Enter shipping address</span>
+                </div>
+                <div class="checkoutSummaryRow total">
+                    <span>Total</span>
+                    <span id="checkoutTotal"></span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="rigforge.js"></script>
+
+</body>
+
+</html>
